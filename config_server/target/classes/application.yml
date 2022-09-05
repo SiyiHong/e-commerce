@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/SiyiHong/config_cloud
+          default-label: main
+          username: SiyiHong
+          password: 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
+
+server:
+  port: 9100
+eureka:
+  client:
+    service-url:
+      defaltZone: http://localhost:8761/eureka/
